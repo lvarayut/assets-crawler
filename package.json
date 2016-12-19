@@ -1,0 +1,60 @@
+{
+  "name": "assets-crawler",
+  "version": "1.0.0",
+  "description": "Simple assets crawler that allows you to get all assets from a particular website via command-line",
+  "license": "MIT",
+  "repository": "lvarayut/assets-crawler",
+  "author": {
+    "name": "Varayut Lerdkanlayanawat",
+    "email": "l.varayut@gmail.com",
+    "url": "github.com/lvarayut"
+  },
+  "bin": "cli.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "xo && nyc ava test"
+  },
+  "files": [
+    "index.js",
+    "cli.js"
+  ],
+  "keywords": [
+    "assets-crawler",
+    "assets-crawler-cli",
+    "assets",
+    "crawler",
+    "command-line"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "cheerio": "^0.22.0",
+    "log-symbols": "^1.0.2",
+    "meow": "^3.7.0",
+    "normalize-url": "^1.8.0",
+    "request": "^2.79.0",
+    "validator": "^6.2.0"
+  },
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "coveralls": "^2.11.12",
+    "nyc": "^10.0.0",
+    "sinon": "^1.17.6",
+    "xo": "^0.17.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true,
+    "rules": {
+      "unicorn/filename-case": 0,
+      "unicorn/explicit-length-check": 0
+    }
+  },
+  "nyc": {
+    "reporter": [
+      "lcov",
+      "text"
+    ]
+  }
+}
