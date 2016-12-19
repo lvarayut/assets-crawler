@@ -27,4 +27,4 @@ const cli = meow(`
     ]
 `);
 
-assetsCrawler(cli.input[0]);
+assetsCrawler(cli.input[0], cli.flags);
