@@ -1,6 +1,6 @@
 {
   "name": "assets-crawler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple assets crawler that allows you to get all assets from a particular website via command-line",
   "license": "MIT",
   "repository": "lvarayut/assets-crawler",
@@ -17,6 +17,7 @@
     "test": "xo && nyc ava test"
   },
   "files": [
+    "src",
     "index.js",
     "cli.js"
   ],
