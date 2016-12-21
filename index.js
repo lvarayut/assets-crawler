@@ -12,7 +12,7 @@ module.exports = (url, opts = {}) => {
     return console.error(chalk.red(`Error: expected a valid url, got ${url}`));
   }
 
-	// Create a crawler instance
+  // Create a crawler instance
   const crawler = new Crawler(url, opts);
 
   // Show a status message. Use stderr to write to the console, so, this message won't be included in the result
