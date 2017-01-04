@@ -37,7 +37,7 @@ class Extractor {
 
     // Add all urls that have never been visited
     for (let i = 0; i < urls.length; i++) {
-      // Normalize each url and transform a relative path to a absolute path, if necessary
+      // Normalize each url and transform a relative path to an absolute path, if necessary
       const url = Url.normalize(urls[i], seedUrl.href);
 
       // Check if the url is in the same domain, have never visited, and wasn't already in the queue

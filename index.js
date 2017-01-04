@@ -23,7 +23,7 @@ module.exports = (url, opts = {}) => {
     // Show a successful message. Use stderr to write to the console, so, this message won't be included in the result
     console.error(logSymbols.success, chalk.green('Successful crawling!'));
 
-    // Print out all the assets when all the urls has been crawled
+    // Print out all the assets when all the urls have been crawled
     console.log(result);
   });
 };

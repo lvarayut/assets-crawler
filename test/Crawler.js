@@ -13,7 +13,7 @@ test('sendRequest should reject in case of wrong url', t => {
   t.throws(Crawler.sendRequest('http://foo.baz', 10000));
 });
 
-test('sendRequest should return all assets in JSON format', t => {
+test('showResult should return all assets in JSON format', t => {
   const assets = new Map();
   assets.set('http://google.com', ['http://google.com/foo.png', 'http://google.com/bar.js']);
   const result = Crawler.showResult(assets);

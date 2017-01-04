@@ -13,7 +13,7 @@ test('isValidurl should return a boolean false', t => {
   t.false(Url.isValidUrl('google'));
 });
 
-test('normalize should return a URL object with correct infomation', t => {
+test('normalize should return a URL object with correct information', t => {
   const http = Url.normalize('http://www.google.com');
   const https = Url.normalize('https://www.google.com');
   const absolute = Url.normalize('/foo', 'http://www.google.com');
